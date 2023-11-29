@@ -15,10 +15,11 @@ int main(){
     }
     
     sort(totalCountry, totalCountry+n);
-    bool isSame = false;
     
+    int sum = 1;
     for(int i = 0; i < n; i++){
-        int sum = 1;
+        
+        bool isSame = false;
         if(totalCountry[i] == totalCountry[i+1]){
             sum++;
             isSame = true;
@@ -26,6 +27,7 @@ int main(){
         
         if(!isSame){
             cout << totalCountry[i] << ' ' << sum << endl;
+            sum = 1;
         }
     }
 }
