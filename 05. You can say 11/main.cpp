@@ -4,9 +4,9 @@ using namespace std;
 
 int main(){
     string number;
+    
     while(cin >> number && number != "0"){
-        int odd_sum = 0;
-        int even_sum = 0;
+    	int odd_sum = 0, even_sum = 0;
         int length = number.length();
         
         for(int i = length-1; i >= 0; i-=2){
@@ -18,6 +18,7 @@ int main(){
         }
         
         cout << number;
+        
         if(abs(odd_sum - even_sum) % 11 == 0){
             cout << " is a multiple of 11." << endl;
         }

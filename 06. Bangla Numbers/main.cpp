@@ -31,16 +31,18 @@ void bangla(long long int n){
 int main(){
     long long int n;
     int testCases = 1;
+    
     while(cin >> n){
         printf("%d.", testCases);
+        
         if(n > 0){
             bangla(n);
         }
         else{
             cout << ' ' << '0' << endl;
         }
+        
         cout << "\n";
         testCases++;
     }
-    
 }

@@ -5,11 +5,12 @@ using namespace std;
 int main(){
     int augend, addend;
     
+    //考慮到0 + 1或1 + 0，while判定用OR 
     while(cin >> augend >> addend && augend != 0 || addend != 0){
-        int carryOperations = 0;
+        int carryOperations = 0, isCarry = 0;
         int isCarry = 0;
         
-        while(augend != 0 || addend != 0){
+        while(augend!=0 || addend!=0){
             if(augend%10 + addend%10 + isCarry > 9){
                 carryOperations++;
                 isCarry = 1;
