@@ -2,15 +2,15 @@
 
 using namespace std;
 
-
 int main(){
     string str[100];
-    int stringCount = 0;
-    int maxletter = 0;
+    int stringCount = 0, maxletter = 0;
+    
     while(getline(cin, str[stringCount])){
         if(maxletter < str[stringCount].length()){
             maxletter = str[stringCount].length();
         }
+        
         stringCount++;
     }
     
@@ -22,7 +22,6 @@ int main(){
             else{
                 cout << str[j][i];
             }
-            
         }
         cout << "\n";
     }

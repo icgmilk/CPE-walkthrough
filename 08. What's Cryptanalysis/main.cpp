@@ -7,7 +7,7 @@ int main(){
     cin >> input;
     cin.ignore();
     
-    while(input != 0){
+    while(input--){
         string str;
         getline(cin, str);
 
@@ -21,7 +21,6 @@ int main(){
                 letterCount++;
             }
         }
-        input--;
     }
     
     for(int i = letterCount; i >= 1; i--){
@@ -31,5 +30,4 @@ int main(){
             }
         }
     }
-    
 }

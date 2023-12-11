@@ -2,13 +2,11 @@
 
 using namespace std;
 
-
 int main(){
     string a, b;
     
     while(cin >> a >> b){
-        int lenA = a.length();
-        int lenB = b.length();
+        int lenA = a.length(), lenB = b.length();
         int letterCountA[26] = {0}, letterCountB[26] = {0};
         
         for(int i = 0; i < lenA; i++){

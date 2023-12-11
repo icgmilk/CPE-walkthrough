@@ -7,16 +7,13 @@ int main(){
     
     string encodeMessage;
     while(getline(cin, encodeMessage)){
-        
         string decodeMessage = "";
         
         for(int i = 0; i < encodeMessage.length(); i++){
-            
             if(encodeMessage[i] >= 'A' && encodeMessage[i] <= 'Z'){
                 encodeMessage[i] = encodeMessage[i] - 'A' + 'a';
             }
-            
-            
+                     
             if(encodeMessage[i] == ' '){
                 decodeMessage += ' ';
             }
@@ -33,9 +30,5 @@ int main(){
             }
         }
         cout << decodeMessage << endl;
-    }
-    
-    
-    
-    
+	}
 }
