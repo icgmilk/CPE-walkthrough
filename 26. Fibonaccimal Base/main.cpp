@@ -9,8 +9,7 @@ int main(){
     }
     
     int testCases;
-    cin >> testCases;
-    
+    cin >> testCases;    
     while(testCases--){
         int numbers;
         bool isFibBase = false;
@@ -26,9 +25,7 @@ int main(){
             else if(isFibBase == true){
                 cout << '0';
             }
-        }
-        
+        } 
         cout << " (fib)" << endl;
     }
-    
 }

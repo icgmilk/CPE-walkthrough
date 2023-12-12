@@ -22,9 +22,7 @@ int main(){
         for(int i = poly.size()-2; i >= 0; i--){
             result += expon * poly[i] * pow(x, expon-1);
             expon++;
-        }
-        
+        }   
         cout << result << endl;
     }
-    
 }

@@ -5,11 +5,10 @@ using namespace std;
 int decToHex(int m){
     int hexNumber = 0, index = 0;
     while(m != 0){
-        hexNumber += pow(16, index) * (m % 10);
+        hexNumber += pow(16, index) * (m%10);
         m /= 10;
         index++;
     }
-    
     return hexNumber;
 }
 
@@ -19,14 +18,10 @@ int binaryCount(int m){
         if(m % 2 == 1){
             onesCount++;
         }
-        
         m /= 2;
     }
-    
     return onesCount;
 }
-
-
 
 int main(){
     int n;

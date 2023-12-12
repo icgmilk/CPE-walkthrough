@@ -14,24 +14,21 @@ void decToBin(int number){
         else{
             binaryArray[arraySize] = 0;
         }
+        
         arraySize++;
         number /= 2;
     }
     for(int i = arraySize - 1; i >= 0; i--){
         cout << binaryArray[i];
     }
-    
-    
     cout << " is " << onesCount << " (mod 2)." << endl;
 }
-
 
 int main(){
     int I;
     
     while(true){
-        cin >> I;
-        
+        cin >> I;       
         if(I == 0){
             break;
         }

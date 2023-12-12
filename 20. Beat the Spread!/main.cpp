@@ -1,17 +1,17 @@
-
 #include <iostream>
 
 using namespace std;
 
 int main(){
-    int testCases, sum, difference, teamAScore, teamBScore;
-    cin >> testCases;
+    int n, s, d, teamAScore, teamBScore;
+    cin >> n;
     
-    while(testCases--){
-        cin >> sum >> difference;
-        teamAScore = (sum + difference) / 2;
-        teamBScore = sum - teamAScore;
-        if(teamAScore < 0 || teamBScore < 0 || (sum + difference) % 2 != 0){
+    while(n--){
+        cin >> s >> d;
+        
+        teamAScore = (s+d) / 2, teamBScore = s-teamAScore;
+        
+        if(teamAScore<0 || teamBScore<0 || (s+d) % 2 != 0){
             cout << "impossible" << endl;
         }
         else{

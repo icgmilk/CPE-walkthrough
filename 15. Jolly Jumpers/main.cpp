@@ -6,6 +6,7 @@ int main(){
     int n;
     while(cin >> n){
         int numberArray[n], jollyArray[n-1];
+        
         for(int i = 0; i < n; i++){
             cin >> numberArray[i];
         }
@@ -31,6 +32,5 @@ int main(){
         else{
             cout << "Not jolly" << endl;
         }
-    }
-   
+    }   
 }

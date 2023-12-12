@@ -3,8 +3,7 @@
 using namespace std;
 
 int main(){
-    string n;
-    
+    string n; 
     while(getline(cin, n)){
         int test = 0, currentNumber = 0, maxNumber = 0;
         for(int i = 0; i < n.length(); i++){
@@ -20,10 +19,10 @@ int main(){
                 test += (n[i] - 'a' + 36);
                 currentNumber = (n[i] - 'a' + 36);
             }
+            
             if(maxNumber < currentNumber){
                 maxNumber = currentNumber;
-            }
-            
+            } 
         }
         
         bool isPossible = false;
@@ -34,6 +33,7 @@ int main(){
                 break;
             }
         }
+        
         if(!isPossible){
             cout << "such number is impossible!" << endl;
         }

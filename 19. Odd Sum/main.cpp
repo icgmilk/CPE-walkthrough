@@ -2,22 +2,19 @@
 
 using namespace std;
 
-
 int main(){
-   int totalCases, minimum, maximum;
+   int t, a, b;   
+   cin >> t;
    
-   cin >> totalCases;
-   
-   for(int cases = 1; cases <= totalCases; cases++){
-       cin >> minimum >> maximum;
+   for(int cases = 1; cases <= t; cases++){
+       cin >> a >> b;
        int oddSum = 0;
        
-       for(minimum; minimum <= maximum; minimum++){
-           if(minimum % 2 == 1){
-               oddSum += minimum;
+       for(a; a <= b; a++){
+           if(a % 2 == 1){
+               oddSum += a;
            }
        }
-       
        cout << "Case " << cases << ": " << oddSum << endl;
    }
 }
