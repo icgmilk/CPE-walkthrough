@@ -54,7 +54,7 @@ void bubble_sort(int arr[], int len){
             distance += abs(new_add - r_street[i]);
         }
 ```
-這邊有用到 `abs()`，所以要記得在前面 include <math.h> 或 <stdlib.h>
+這邊有用到 `abs()`，所以要記得在前面 include <stdlib.h>
 5. 輸出
 ```C
 printf("%d\n", distance);
@@ -62,7 +62,7 @@ printf("%d\n", distance);
 
 ```
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 #define MAX_SIZE 30000
 void bubble_sort(int arr[], int len){
     for(int i = 0; i < len; i++){
