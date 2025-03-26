@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 int main(){
-    int a, b;
-    while(scanf("%d%d", &a, &b) != EOF){
-    printf("%d\n", abs(a-b));
+    long long int a, b;
+    while(scanf("%lld%lld", &a, &b) != EOF){
+    printf("%lld\n", abs(a-b));
     }
 }
