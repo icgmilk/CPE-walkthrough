@@ -13,7 +13,7 @@
 
 1. 用 array 裝 street numbers
 
-```
+```C
 int r_street[MAX_SIZE];
 
         for(int i = 0; i < r; i++){
@@ -23,7 +23,7 @@ int r_street[MAX_SIZE];
 MAX_SIZE 為題目給的限制 30000
 2. 排序 street numbers
 
-```
+```C
 void bubble_sort(int arr[], int len){
     for(int i = 0; i < len; i++){
         for(int j = i+1; j < len; j++){
@@ -38,7 +38,7 @@ void bubble_sort(int arr[], int len){
 ```
 這邊用 bubble sort
 3. 找中位數
-```
+```C
         if(r%2 == 1){
             new_add = r_street[r/2];
         }
@@ -47,19 +47,22 @@ void bubble_sort(int arr[], int len){
         }
 ```
 注意要分成 array 內為奇偶數的不同情況找中位數
+
 4. 計算絕對值相減
-```
+```C
         for(int i = 0; i < r; i++){
             distance += abs(new_add - r_street[i]);
         }
 ```
+這邊有用到 `abs()`，所以要記得在前面 include <math.h> 或 <stdlib.h>
 5. 輸出
-```
+```C
 printf("%d\n", distance);
 ```
 
 ```
 #include <stdio.h>
+#include <math.h>
 #define MAX_SIZE 30000
 void bubble_sort(int arr[], int len){
     for(int i = 0; i < len; i++){
