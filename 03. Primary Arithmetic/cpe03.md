@@ -25,9 +25,9 @@ while(a != 0 || b != 0){
 #include <stdio.h>
 
 int main(){
-    int a, b, carry = 0;
+    int a, b;
     while(scanf("%d%d", &a, &b) && a != 0 || b != 0){
-        int carry_count = 0;
+        int carry_count = 0, carry = 0;
         while(a != 0 || b != 0){
             if(a%10 + b%10 + carry >= 10){
                 carry_count++;
