@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int s, d;
-    while(scanf("%d%d", &s, &d) != EOF){
-        int member = s;
+    long long int s, d;
+    while(scanf("%lld%lld", &s, &d) != EOF){
+        long long int member = s;
         for(int i = s; s < d; s += member){
             if(s >= d){
                 break;
@@ -13,5 +13,6 @@ int main(){
             }
         }
         
-        printf("%d\n", member);
+        printf("%lld\n", member);
     }
+}

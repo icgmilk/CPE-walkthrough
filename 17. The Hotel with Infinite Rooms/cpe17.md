@@ -10,10 +10,12 @@
 
 現在會輸入第一組旅行團 S 跟天數 D，要回傳過 D 天後入住的旅行團人數。
 
+首先先注意到題目的 S 輸入上限為 10^15，大於 int 的上限，所以這邊要用 long long int。
+
 我們可以用 for loop 去找
 
 ```C
-int member = s;
+long long int member = s;
         for(int i = s; s < d; s += member){
             if(s >= d){
                 break;
@@ -30,9 +32,9 @@ int member = s;
 #include <stdio.h>
 
 int main(){
-    int s, d;
-    while(scanf("%d%d", &s, &d) != EOF){
-        int member = s;
+    long long int s, d;
+    while(scanf("%lld%lld", &s, &d) != EOF){
+        long long int member = s;
         for(int i = s; s < d; s += member){
             if(s >= d){
                 break;
@@ -42,6 +44,7 @@ int main(){
             }
         }
         
-        printf("%d\n", member);
+        printf("%lld\n", member);
     }
+}
 ```
