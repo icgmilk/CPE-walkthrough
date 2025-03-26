@@ -19,16 +19,15 @@ int main(){
     int i, j;
     
     while(scanf("%d%d", &i, &j) != EOF){
-        int temp;
+        int temp_i = i, temp_j = j;
         if(j < i){
-            temp = i;
-            i = j;
-            j = temp;
+            temp_i = j;
+            temp_j = i;
         }
         
         int max_cycle_len = 0, cycle_len;
-        for(i; i<= j; i++){
-            cycle_len = algo_cycle_len(i, 0);
+        for(temp_i; temp_i<= temp_j; temp_i++){
+            cycle_len = algo_cycle_len(temp_i, 0);
             if(max_cycle_len < cycle_len){
                 max_cycle_len = cycle_len;
             }
