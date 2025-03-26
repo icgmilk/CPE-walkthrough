@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 #define MAX_SIZE 30000
 void bubble_sort(int arr[], int len){
     for(int i = 0; i < len; i++){
