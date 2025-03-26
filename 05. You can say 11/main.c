@@ -12,7 +12,7 @@ int main(){
             even += (num[i]-'0');
         }
         
-        if(abs(odd-even) == 11 || abs(odd-even) == 0){
+        if(abs(odd-even) % 11 == 0){
             printf("%s is a multiple of 11.\n", num);
         }
         else{
