@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
     char mad_str[100];
@@ -11,7 +12,7 @@ int main(){
                     printf(" ");
                 }
             for(int j = 0; j < 47; j++){
-                if(mad_str[i] == keyboard[j]){
+                if(mad_str[i] == keyboard[j] || mad_str[i] - 'A' + 'a' == keyboard[j]){
                     printf("%c", keyboard[j-2]);
                 }
             }

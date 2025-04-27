@@ -6,7 +6,6 @@ long long int target(int x, int y){
         basic += i;
     }
     return basic + extra;
-    
 }
 
 int main(){

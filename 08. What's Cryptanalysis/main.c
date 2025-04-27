@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
     int n, letter_count = 0, ascii_count[130] = {0};

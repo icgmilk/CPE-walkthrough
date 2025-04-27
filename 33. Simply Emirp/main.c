@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+
 int Prime(int n){
     if(n == 1 || n == 0){
         return 0;
@@ -14,12 +15,19 @@ int Prime(int n){
 }
 
 int Emrip(int n){
+    int temp_n = n;
     int reverse = 0;
-    while(n != 0){
-        reverse = reverse * 10 + n % 10;
-        n /= 10;
+    while(temp_n != 0){
+        reverse = reverse * 10 + temp_n % 10;
+        temp_n /= 10;
     }
-    return Prime(reverse);
+    if(n == reverse){
+        return 0;
+    }
+    else{
+        return Prime(reverse);
+    }
+    
 }
 
 

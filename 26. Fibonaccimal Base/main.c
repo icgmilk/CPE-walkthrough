@@ -14,7 +14,7 @@ int main(){
     while(n--){
         int num, flag = 0;
         scanf("%d", &num);
-        printf("%d = ");
+        printf("%d = ", num);
         
         for(int i = 45; i > 1; i--){
             if(num >= fib[i]){

@@ -10,16 +10,26 @@ int main(){
         scanf(" %c", &tempE);
         scanf(" %d", &n);
         
-        int matrix[n*n];
+        int matrix[n][n];
         int isSym = 1;
-        for(int j = 0; j < n*n; j++){
-            scanf("%d", &matrix[j]);
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                scanf("%d", &matrix[i][j]);
+                if (matrix[i][j] < 0) {
+                    isSym = 0;
+                }
+            }
         }
         
-        for(int j = 0; j < n*n/2; j++){
-            if(matrix[j] != matrix[(n*n-1) - j]){
-                isSym = 0;
-                break;
+        if (isSym) {
+            for (int i = 0; i < n && isSym; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (matrix[i][j] != matrix[n-1-i][n-1-j]) {
+                        isSym = 0;
+                        break;
+                    }
+                }
             }
         }
         
