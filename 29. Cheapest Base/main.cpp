@@ -20,7 +20,7 @@ int main(){
             cin >> queryNumber;
             
             int baseCosts[37] = {0};
- 
+
             for(int base = 2; base <= 36; base++){
                 int temp = queryNumber;
                 vector<int> baseChange;

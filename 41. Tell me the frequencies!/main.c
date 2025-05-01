@@ -3,8 +3,12 @@
 
 int main(){
     char str[1001];
-    
+    int flag = 0;
     while(gets(str)){
+        if(flag){
+            printf("\n");
+        }
+        flag = 1;
         int ASCIICount[130] = {0};
         for(int i = 0; i < strlen(str); i++){
             ASCIICount[str[i]]++;
@@ -17,6 +21,5 @@ int main(){
                 }
             }
         }
-        printf("\n");
     }
 }
