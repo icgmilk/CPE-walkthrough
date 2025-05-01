@@ -19,6 +19,8 @@ int main(){
             cout << i.first << ' ';
             printf("%.4f\n", (i.second/treeCount) * 100);
         }
-        cout << "\n";
+        if(testCases != 0){
+            printf("\n");
+        }
     }
 }

@@ -21,7 +21,6 @@ int main(){
     for(int i = 0; i < n; i++){    
         if(totalCountry[i] == totalCountry[i+1]){
             sum++;
-            isSame = true;
         }
         else{
             cout << totalCountry[i] << ' ' << sum << endl;
