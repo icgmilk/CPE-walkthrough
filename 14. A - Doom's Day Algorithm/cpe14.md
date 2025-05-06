@@ -1,7 +1,6 @@
 # Doom’s Day Algorithm
 
 題目連結: (Doom’s Day Algorithm)[https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=242&page=show_problem&problem=3170]
-
 ![14-1](pic/14-1.jpg)
 
 **doomsday** 的定義是在特定日期的 n 月 n 日的星期數相同。例如在  2011 年 4/4 6/6 8/8 10/10 12/12 都是星期一。

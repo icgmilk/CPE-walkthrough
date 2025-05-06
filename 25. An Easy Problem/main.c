@@ -4,7 +4,7 @@
 int main(){
     char n[63]; 
     while(gets(n) != NULL){
-        int temp = 0, currentNumber = 0, maxNumber = 0;
+        int currentNumber = 0, maxNumber = 0;
         int base = 1;
         for(int i = 0; i < strlen(n); i++){
             if(n[i] >= '0' && n[i] <= '9'){
